@@ -22,7 +22,6 @@ const isAuth = require('./middleware/is-auth');
 const User = require('./models/user');
 // const mongoConnect = require('./util/database').mongoConnect;
 
-//const MONGODB_URI = 'mongodb+srv://saknode:0kIr10Fcc5dmhMA0@cluster0-zykne.mongodb.net/shop?retryWrites=true&w=majority';
 const MONGODB_URI =`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0-zykne.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`
 console.log(MONGODB_URI);
 const app = express();
