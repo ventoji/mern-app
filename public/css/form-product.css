@@ -1,0 +1,38 @@
+.form-control{
+    margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea
+{
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.form-control input,
+.form-control textarea
+{
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 2px;
+}
+
+.form-control textarea:focus,
+.form-control input:focus {
+    outline-color: #00695c;
+    outline-style: solid;
+}
+
+.signup-form,
+.login-form,
+.product-form {
+    width: 30rem;
+    max-width: 90%;
+    margin: auto;
+}
+.form-control textarea.invalid,
+.form-control input.invalid {
+    border-color: red;
+}
